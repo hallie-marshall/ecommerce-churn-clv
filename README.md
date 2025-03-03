@@ -120,6 +120,6 @@ These recommendations provide next steps on a pathway to further harness the pow
 - Classification modeling assumes a fixed 90-day churn window.
 - Models do not account for external influences such as economic trends, competitor activity, or shifts in purchasing behavior. 
 - Additional assumptions used as constants include:
-	Customer Lifetime = 3 years
-	Profit margin = 18%
-	Discount Rate (for lifetime financial valuation) = 1.0%
+  * Customer Lifetime = 3 years
+  * Profit Margin = 18%
+  * Discount Rate (for lifetime financial valuation) = 1.0%
