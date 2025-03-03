@@ -10,7 +10,7 @@ The dataset includes detailed information on customer purchases, order frequency
 -	Predict future customer revenue and retention likelihood using XGBoost regression and classification models
 -	Segment customers based on purchasing patterns and retention risks to inform targeted marketing and resource allocation
 
-These insights help optimize engagement strategies, improve customer loyalty, and maximize revenue potential. Sales projections, feature value, and other findings are detailed below. Recommendations are provided for next steps. These include targeted customer and product sets for marketing strategies. 
+These insights help optimize engagement strategies, improve customer loyalty, and maximize revenue potential. Sales projections, feature value, and other findings are detailed below. [Recommendations](https://github.com/hallie-marshall/ecommerce-churn-clv/edit/main/README.md#recommendations) are provided for next steps. These include targeted customer and product sets for marketing strategies. 
 
 ## Data Structure
 
@@ -121,8 +121,5 @@ These recommendations provide next steps on a pathway to further harness the pow
 - Models do not account for external influences such as economic trends, competitor activity, or shifts in purchasing behavior. 
 - Additional assumptions used as constants include:
 	Customer Lifetime = 3 years
-Profit margin = 18%
+	Profit margin = 18%
 	Discount Rate (for lifetime financial valuation) = 1.0%
-	
-
-# ecommerce-churn-clv
