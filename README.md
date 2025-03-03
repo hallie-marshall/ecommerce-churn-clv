@@ -96,9 +96,16 @@ Based on the descriptive, probabilistic, and predictive modeling approaches, the
 
 ![XGBoost Classification Model](CLV_Classification.png)
 
+_The XGBoost Classification Model's SHAP Interpretation indicate the importance of recency in predicting future purchases._
+ 
+ 
+ 
 ![XGBoost Regression Model](CLV_Regression.png)
 
-
+_The XGBoost Regression Model's SHAP Interpretation indicate the importance of sales value, confirmed by sales value in the last 28 days, in predicting future purchases._
+ 
+ 
+ 
 The results confirm that predictive modeling significantly enhances traditional CLV estimation by providing more accurate revenue forecasts and churn predictions. While the classification model performs exceptionally well for retention insights, the regression model requires further refinement to minimize revenue overestimation and outlier influence. These insights enable businesses to optimize marketing strategies, financial planning, and customer engagement efforts.
 
 ## Recommendations
