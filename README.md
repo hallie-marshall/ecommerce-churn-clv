@@ -1,4 +1,4 @@
-# Customer Lifetime Value with Predictive, Probabilistic and Predictive Modeling 
+# Customer Lifetime Value with Descriptive, Probabilistic and Predictive Modeling 
 
 ## Project Background
 
