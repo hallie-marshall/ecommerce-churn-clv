@@ -41,7 +41,7 @@ To support predictive modeling, additional features include:
 
 ## Executive Summary
 
-This project explores Customer Lifetime Value (CLV) prediction using both traditional modeling and machine learning techniques to estimate future sales and customer retention. By analyzing transaction data, the project reveals valuable insights into customer purchasing behavior, retention potential, and areas for strategic promotional growth.
+This project explores customer lifetime value (CLV) prediction using both traditional modeling and machine learning techniques to estimate future sales and customer retention. By analyzing transaction data, the project reveals valuable insights into customer purchasing behavior, retention potential, and areas for strategic promotional growth.
 
 The CLV analysis provides a data-driven foundation for optimizing customer engagement, retention efforts, and revenue forecasting. Findings reveal distinct patterns in purchasing habits, order frequency, and long-term value, highlighting opportunities to prioritize high-value customers, re-engage at-risk buyers, and tailor marketing strategies to maximize profitability.
 
@@ -57,7 +57,7 @@ Through a machine learning approach, we’ve predicted:
 -	**MAPE:** while overall predictions are strong, a relative percentage error of **522.47%** indicates that further refinement would greatly benefit the model for automated and long-term use.
 
  
-The insights from this project enhances customer segmentation, retention strategies, and revenue forecasting. This analysis lays the groundwork for future initiatives, as highlighted in the [Recommendations](https://github.com/hallie-marshall/ecommerce-churn-clv/edit/main/README.md#recommendations) section below.
+The insights from this project enhance customer segmentation, retention strategies, and revenue forecasting. This analysis lays the groundwork for future initiatives, as highlighted in the [Recommendations](https://github.com/hallie-marshall/ecommerce-churn-clv/edit/main/README.md#recommendations) section below.
 
 ## Insights
 
@@ -79,7 +79,7 @@ Based on the descriptive, probabilistic, and predictive modeling approaches, the
 
 1.	**Revenue Prediction**
 -	The XGBoost Regression Model predicts customer revenue for the next 90 days, achieving an accuracy rate of 92.7%.
--	However, mean absolute error (MAE) of $116,562 and RMSE of $357,635 indicate some overestimation for high-value customers. This could be likely to high-spend outliers.
+-	However, mean absolute error (MAE) of $116,562 and RMSE of $357,635 indicate some overestimation for high-value customers. This could likely be due to high-spend outliers.
 -	The model effectively captures general revenue trends but requires adjustments to improve customer-level precision. Adding additional features could decrease the error values and increase the accuracy of the model.
 
 2.	**Churn Prediction**
@@ -96,17 +96,17 @@ Based on the descriptive, probabilistic, and predictive modeling approaches, the
 
 ![XGBoost Classification Model](CLV_Classification.png)
 
-_The XGBoost Classification Model's SHAP Interpretation indicate the importance of recency in predicting future purchases._
+_The XGBoost Classification Model's SHAP Interpretation indicates the importance of recency in predicting future purchases._
  
  
  
 ![XGBoost Regression Model](CLV_Regression.png)
 
-_The XGBoost Regression Model's SHAP Interpretation indicate the importance of sales value, confirmed by sales value in the last 28 days, in predicting future purchases._
+_The XGBoost Regression Model's SHAP Interpretation indicates the importance of sales value, confirmed by sales value in the last 28 days, in predicting future purchases._
  
  
  
-The results confirm that predictive modeling significantly enhances traditional CLV estimation by providing more accurate revenue forecasts and churn predictions. While the classification model performs exceptionally well for retention insights, the regression model requires further refinement to minimize revenue overestimation and outlier influence. These insights enable businesses to optimize marketing strategies, financial planning, and customer engagement efforts.
+The results confirm that predictive modeling significantly enhance traditional CLV estimation by providing more accurate revenue forecasts and churn predictions. While the classification model performs exceptionally well for retention insights, the regression model requires further refinement to minimize revenue overestimation and outlier influence. These insights enable businesses to optimize marketing strategies, financial planning, and customer engagement efforts.
 
 ## Recommendations
 
@@ -116,14 +116,14 @@ There are several opportunities to further utilize these insights, optimize stra
   
 - **Model Enhancements:** Address overestimation of high-value customers by adjusting feature importance, parameters, or trying additional models. Optimizing the model’s feature set will increase the accuracy and value of the model to the organization.
     
-- **Leverage A/B Testing and Multivariate Testing:** Use A/B testing or multi-variate testing to assess the performance of various marketing strategies across different segments. By analyzing performance data, the company can identify which content, offers, and communication channels drive the highest engagement and conversion rates. This iterative approach enables data-driven optimization, ensuring marketing efforts are continuously refined for maximum impact.
+- **Leverage A/B Testing and Multivariate Testing:** Use A/B testing or multivariate testing to assess the performance of various marketing strategies across different segments. By analyzing performance data, the company can identify which content, offers, and communication channels drive the highest engagement and conversion rates. This iterative approach enables data-driven optimization, ensuring marketing efforts are continuously refined for maximum impact.
 
 These recommendations provide next steps on a pathway to further harness the power of the provided customer segmentation insights, enabling the organization to improve operational efficiency, boost customer satisfaction, and drive sustainable growth.
 
 ## Assumptions and Caveats
 
 - Data was only used for US-based customers. Including foreign customer data may lead to differing results.
-- The dataset consists of orders of a 328-day period, with Invoice Dates ranging from 1/3/2024 to 11/28/2024. Trends observed in this timeframe may not fully account for long-term customer behaviors or seasonal variations beyond this window.
+- The dataset consists of orders over a 328-day period, with Invoice Dates ranging from 1/3/2024 to 11/28/2024. Trends observed in this timeframe may not fully account for long-term customer behaviors or seasonal variations beyond this window.
 - Classification modeling assumes a fixed 90-day churn window.
 - Models do not account for external influences such as economic trends, competitor activity, or shifts in purchasing behavior. 
 - Additional assumptions used as constants include:
